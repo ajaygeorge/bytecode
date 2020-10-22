@@ -3,16 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.airlift</groupId>
+        <groupId>com.facebook.airlift</groupId>
         <artifactId>airbase</artifactId>
-        <version>83</version>
+        <version>95</version>
     </parent>
 
     <artifactId>bytecode</artifactId>
     <version>1.3-SNAPSHOT</version>
 
     <description>High-level library for generating JVM bytecode</description>
-    <url>https://github.com/airlift/bytecode</url>
+    <url>https://github.com/prestodb/bytecode</url>
 
     <inceptionYear>2012</inceptionYear>
 
@@ -20,7 +20,7 @@
         <air.check.skip-spotbugs>true</air.check.skip-spotbugs>
         <air.check.skip-pmd>true</air.check.skip-pmd>
 
-        <dep.asm.version>6.2.1</dep.asm.version>
+        <dep.asm.version>9.0</dep.asm.version>
     </properties>
 
     <dependencies>
@@ -82,8 +82,8 @@
                 <artifactId>license-maven-plugin</artifactId>
                 <configuration>
                     <excludes combine.children="append">
-                        <exclude>src/main/java/io/airlift/bytecode/ClassInfo.java</exclude>
-                        <exclude>src/main/java/io/airlift/bytecode/ClassInfoLoader.java</exclude>
+                        <exclude>src/main/java/com/facebook/airlift/bytecode/ClassInfo.java</exclude>
+                        <exclude>src/main/java/com/facebook/airlift/bytecode/ClassInfoLoader.java</exclude>
                     </excludes>
                 </configuration>
             </plugin>
